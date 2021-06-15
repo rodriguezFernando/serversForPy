@@ -2,11 +2,14 @@
 
 All pyhton UDP servers for interfacing/debugging (Prometheus project).
 
-## server.py :
-listens to UDP messages on a given IP/port and shows the data received + client.
+## socketServer.py (main):
+### (UPDATE!!!! It looks for a specific command to discriminate a STOP signal among actuator commands).
+listens to UDP messages on a given IP/port and shows the data received + client. 
 
-## integrate.py :
+## serversForPy/integrate.py (main):
 receives command strings and sends them through UART protocol. (sudo is mandatory to access serial communication).
 
-## decode.py :
-receives commands from the pedals' interface and decodes it to find the STOP signal.
+## serversForPy/integrate.py (master):
+receives command strings and sends them through UART protocol. (sudo is mandatory to access serial communication).
+
+
